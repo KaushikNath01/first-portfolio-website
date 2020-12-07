@@ -162,12 +162,17 @@ nav{
     font-family: lightP;
     cursor: pointer;
     transition: .5s;
+    a{
+        color: white;
+    }
 }
 .info-btn:hover{
     border: none;
     background-color: white;
     width: 280px;
-    color: black;
+    a{
+        color: black;
+    }
 }
 .experience{
     width: 96%;

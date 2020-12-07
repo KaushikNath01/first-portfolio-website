@@ -228,10 +228,17 @@ nav {
   transition: .5s;
 }
 
+.info button a {
+  color: white;
+}
+
 .info-btn:hover {
   border: none;
   background-color: white;
   width: 280px;
+}
+
+.info-btn:hover a {
   color: black;
 }
 
