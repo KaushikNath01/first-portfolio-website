@@ -100,16 +100,36 @@ nav{
     transform: translateX(101%);
     will-change: transform;
     transition: .5s ease-in-out;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    flex-direction: column;
     list-style: none;
     z-index: 1;
+    .close-btn{
+        font-size: 44px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: .4em;
+    }
+    .links{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        li{
+            a{
+                &:hover{
+                    color: rgb(255, 74, 119);
+                }
+            }
+        }
+    }
 }
 .open{
     transform: translateX(0);
+    transition: .6s ease-in-out;
+}
+.lock-scroll {
+    overflow: hidden;
 }
 .overlay{
     background: url(../images/pexels-fotografierende-1111597.jpg);
@@ -421,4 +441,9 @@ nav{
     //         }
     //     }
     // }
+}
+@media (min-width:1024px){
+    .menu{
+        display: none;
+    }
 }

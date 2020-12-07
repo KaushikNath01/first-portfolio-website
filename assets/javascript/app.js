@@ -1,16 +1,18 @@
 const ham = document.querySelector('.ham > .ham-menu');
 const menu = document.querySelector('.menu');
-
+const closeBtn = document.querySelector('.close-btn');
 
 ham.addEventListener("click", toggleMenu);
-menu.addEventListener("click",toggleMenu);
+closeBtn.addEventListener("click",toggleMenu);
 
 
 function toggleMenu () {
    if (menu.classList.contains('open')) {
      menu.classList.remove('open')
+     document.body.classList.remove('lock-scroll');
    }else {
       menu.classList.add('open')
+      document.body.classList.add('lock-scroll');
    }
 }
 
