@@ -109,13 +109,16 @@ nav{
         position: absolute;
         top: 0;
         left: .4em;
+        outline: none;
     }
     .links{
         height: 100%;
-        width: 100%;
-        display: grid;
-        place-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         li{
+            margin: 2em;
             a{
                 &:hover{
                     color: rgb(255, 74, 119);
@@ -335,15 +338,47 @@ nav{
     color: white;
 }
 .foot-grids{
+    background-color: rgb(59, 59, 59);
+    clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%);
     width: 96%;
     margin: auto;
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 1.5em;
-    text-align: center;
+    place-items: center;
     padding: 10px 0px;
+    color: white;
+    .foot-grid-box{
+        h2{
+            margin: 0px 0px 34px 0px;
+            font-size: 2em;
+        }
+        p{
+            margin: 0px 0px 34px 0px;
+            font-size: 1.2em;
+        }
+        .foot-cta{
+            button{
+                height: 50px;
+                width: 160px;
+                border-radius: 8px;
+                border: none;
+                background: none;
+                background-color: white;
+                font-family: lightP;
+                font-size: 17px;
+                font-weight: 400;
+                outline: none;
+                cursor: pointer;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    a{
+        color: white;
+    }
 }
 .merch-section{
     width: 90%;
@@ -357,13 +392,13 @@ nav{
     }
     .merch{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
         place-items: center;
         align-items: center;
         grid-gap: 1.4em;
         .merch-container-one{
             img{
-                height: 44vh;
+                height: 34vh;
                 cursor: pointer;
                 &:hover{
                     transform: scale(1.2);
@@ -381,8 +416,14 @@ nav{
     }
     
 }
-
-
+.about-section{
+    margin: 6em 0 2.2em 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.form-heading{
+    margin: .5em 0 1.1em 0;
+}
 @media (max-width:768px) {
     .navbar{
         display: none;
@@ -404,12 +445,14 @@ nav{
     .not-for-mobile{
         display: none;
     }
-    // .merch-container-one{
-    //     img{
-    //         height: 50vh;
-    //         width: 140vw;
-    //     }
-    // }
+   .menu{
+       links{
+           height: 100vh;
+       }
+   }
+   .foot-grids{
+       display: none;
+   }
 }
 
 @media (min-width:769px) {
@@ -428,22 +471,98 @@ nav{
         width: 240px;
         height: 50px;
     }
+    .merch-section{
+        width: 90%;
+        margin: auto;
+        .merch-title{
+            margin: 1.2em 0 1em 0;
+            text-align: center;
+            h1{
+                font-size: 38px;
+            }
+        }
+    }
+    .form-heading{
+        margin: 2.6em 0 1.1em 0;
+    }
     .foot-grids{
         height: 40vh;
     }
-    // .merch-section{
-    //     .merch{
-    //         .merch-container-one{
-    //             img{
-    //                 height: 50vh;
-    //                 width: 90vw;
-    //             }
-    //         }
-    //     }
-    // }
 }
 @media (min-width:1024px){
     .menu{
         display: none;
+    }
+    .merch-section{
+        .merch-title{
+            h1{
+                margin: 1.8em 0 1em 0;
+                font-size: 38px;
+            }
+        }
+        .merch{
+            grid-gap: 1.1em;
+            .merch-container-one{
+                img{
+                    height: 26vh;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: .3s ease-in-out;
+                    }
+                }
+            }
+        }
+        
+    }
+    .foot-grids{
+        height: 30vh;
+    }
+}
+@media (min-width:1200px){
+    .form-section{
+        margin: 40px 0px 0px 0px;
+    }
+    .merch-section{
+        width: 90%;
+        margin: auto;
+        .merch-title{
+            margin: 1em 0 1em 0;
+            text-align: center;
+            h1{
+                font-size: 38px;
+            }
+        }
+        .merch{
+            grid-gap: 1.2em;
+            .merch-container-one{
+                img{
+                    height: 40vh;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: .3s ease-in-out;
+                    }
+                }
+            }
+        }
+        
+    }
+    .foot-grids{
+        height: 50vh;
+    }
+}
+@media (min-width:1401px){
+    .merch{
+        .merch-container-one{
+            img{
+                height: 44vh;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
     }
 }
