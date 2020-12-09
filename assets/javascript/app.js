@@ -10,9 +10,11 @@ function toggleMenu () {
    if (menu.classList.contains('open')) {
      menu.classList.remove('open')
      document.body.classList.remove('lock-scroll');
+     ham.classList.remove('ham-hide')
    }else {
       menu.classList.add('open')
       document.body.classList.add('lock-scroll');
+      ham.classList.add('ham-hide')
    }
 }
 

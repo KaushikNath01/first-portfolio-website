@@ -90,8 +90,8 @@ nav{
 }
 .menu{
     height: 100vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0);
+    width: 100%;
+    background-color: black;
     opacity: .9;
     color: white;
     position: fixed;
@@ -133,6 +133,9 @@ nav{
 }
 .lock-scroll {
     overflow: hidden;
+}
+.ham-hide{
+    display: none;
 }
 .overlay{
     background: url(../images/pexels-fotografierende-1111597.jpg);
