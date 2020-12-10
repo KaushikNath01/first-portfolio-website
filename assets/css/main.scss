@@ -427,6 +427,93 @@ nav{
 .form-heading{
     margin: .5em 0 1.1em 0;
 }
+
+#notfound {
+    position: relative;
+    height: 100vh;
+    background: #fdfdfd;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .notfound {
+    max-width: 767px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+  }
+  
+  .notfound .notfound-404 {
+    position: relative;
+    height: 180px;
+    margin-bottom: 20px;
+    z-index: -1;
+  }
+  
+  .notfound .notfound-404 h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 224px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -12px;
+    color: #030005;
+    text-transform: uppercase;
+    letter-spacing: -20px;
+  }
+  
+  
+  .notfound .notfound-404 h2 {
+    font-family: lightP;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 110px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 0px #8400ff;
+    letter-spacing: 13px;
+    margin: 0;
+  }
+  
+  .notfound a {
+    font-family: lightP;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid;
+    background: transparent;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s all;
+  }
+  
+  .notfound a:hover {
+    background-color: #000000;
+    color: white;
+    border: none;
+  }
+  
+  @media (max-width: 480px) {
+    .notfound .notfound-404 h1 {
+        font-size: 182px;
+    }
+  }
+  
 @media (max-width:768px) {
     .navbar{
         display: none;
@@ -456,6 +543,9 @@ nav{
    .foot-grids{
        display: none;
    }
+   .notfound .notfound-404 h2 {
+    font-size: 24px;
+}
 }
 
 @media (min-width:769px) {
