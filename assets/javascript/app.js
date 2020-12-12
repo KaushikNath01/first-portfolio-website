@@ -28,13 +28,12 @@ const formBtn = document.querySelector('.form-signIn-btn');
 
 
 formBtn.addEventListener('click',(e) => {
-   e.preventDefault();
+//    e.preventDefault();
 
    const nameId = document.getElementById('fullNameId');
    const mobileId = document.getElementById('mobileId');
    const emailId = document.getElementById('emailId');
    const passwordId = document.getElementById('passwordId');
-   const confirmPasswordId = document.getElementById('confirmPasswordId');
    let formError = false;
    
    if ((fullName.value === "") || (fullName.value === null)) {
@@ -76,20 +75,6 @@ formBtn.addEventListener('click',(e) => {
   }else{
        passwordId.innerHTML = '';
        formError = false;
-  }
-
-   if ((confirmPassword.value === "") || (confirmPassword.value === null)) {
-       confirmPasswordId.innerHTML = 'Please add something in the name field'
-       formError = true;
-  }else if ((confirmPassword.value.length < 8)||(confirmPassword.value.length > 16)) {
-       confirmPasswordId.innerHTML = 'Password should not be less than 8 and exceed 16';
-       formError = true;
-  }else if (confirmPassword.value !== password.value) {
-        confirmPasswordId.innerHTML = 'password is not a match'
-        formError = true;
-  }else {
-        confirmPasswordId.innerHTML = '';
-        formError = false;
   }
 
    if (formError = true){

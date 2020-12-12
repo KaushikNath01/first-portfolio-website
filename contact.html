@@ -47,17 +47,18 @@
                <div class="form-inside-box">
                   <h1 class="form-heading" style="font-size: 32px; font-weight: 100;text-align: center; padding: 80px 0px 0px 0px;">Get in Touch with us</h1>
                   <div class="signIn-form">
-                         <form class="form-input" action="" method="post">
-                                <input class="fullName" type="text" placeholder="Full name">
+                         <form class="form-input" action="POST" method="post" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+                                <input class="fullName" type="text" placeholder="Full name" name="name">
                                 <small id="fullNameId"></small>
-                                <input class="mobileNo" type="text" placeholder="mobile no">
+                                <input class="mobileNo" type="number" placeholder="mobile no" name="number">
                                 <small id="mobileId" ></small>
-                                <input class="email" type="email" placeholder="email" autocomplete="username">
+                                <input class="email" type="email" placeholder="email" autocomplete="username" name="email">
                                 <small id="emailId"></small>
-                                <input class="password"  type="password" placeholder="password" autocomplete="new-password">
+                                <input class="password"  type="password" placeholder="password" autocomplete="new-password" name="password">
                                 <small id="passwordId"></small>
-                                <input class="confirmPassword"  type="password" placeholder="confirm Password" autocomplete="new-password">
-                                <small id="confirmPasswordId"></small>
+                                <textarea name="message" id="messageId" cols="30" rows="10" placeholder="messages"></textarea>
+                                <input class="file" type="file" name="file">
+                                <div data-netlify-recaptcha="true"></div>
                                 <button class="form-signIn-btn">Sign in</button>
                          </form>
                   </div>

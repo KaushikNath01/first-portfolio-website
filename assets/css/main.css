@@ -449,6 +449,21 @@ nav {
   outline: none;
 }
 
+.signIn-form > form > textarea {
+  border: none;
+  border: 0.5px solid #3b3b3b;
+  outline: none;
+  font-family: lightP;
+  padding: 10px 0px 0px 10px;
+  font-size: 16px;
+  height: 210px;
+}
+
+.signIn-form > form > .file {
+  font-size: 16px;
+  border-bottom: none;
+}
+
 .form-signIn-btn {
   margin: auto;
   width: 200px;
@@ -573,6 +588,10 @@ nav {
   margin: .5em 0 1.1em 0;
 }
 
+.error-content {
+  place-items: center;
+}
+
 #notfound {
   position: relative;
   height: 100vh;
@@ -634,25 +653,38 @@ nav {
   margin: 0;
 }
 
-.notfound a {
-  font-family: lightP;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-  border: 2px solid;
-  background: transparent;
-  padding: 10px 40px;
-  font-size: 14px;
-  font-weight: 700;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
+.signIn-Up-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: .8;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
-.notfound a:hover {
-  background-color: #000000;
-  color: white;
-  border: none;
+.signIn-Up-section .form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 70%;
+  width: 40%;
+  border-radius: 40px;
+}
+
+.signIn-Up-section .form-section .form-grid-one img {
+  height: 190px;
+}
+
+.signIn-Up-section .form-section form {
+  width: 90%;
+  margin: auto;
+}
+
+.signIn-Up-section .form-section form input {
+  width: 350px;
+  height: 40px;
 }
 
 @media (max-width: 480px) {
@@ -691,6 +723,14 @@ nav {
   .notfound .notfound-404 h2 {
     font-size: 24px;
   }
+  .notfound .notfound-404 {
+    margin-bottom: 110px;
+  }
+}
+
+.signIn-Up-section .form-section {
+  height: 70%;
+  width: 80%;
 }
 
 @media (min-width: 769px) {
@@ -726,6 +766,10 @@ nav {
   .foot-grids {
     height: 40vh;
   }
+  .signIn-Up-section .form-section {
+    height: 50%;
+    width: 70%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -751,6 +795,10 @@ nav {
   }
   .foot-grids {
     height: 30vh;
+  }
+  .signIn-Up-section .form-section {
+    height: 60%;
+    width: 70%;
   }
 }
 
@@ -785,6 +833,10 @@ nav {
   .foot-grids {
     height: 50vh;
   }
+  .signIn-Up-section .form-section {
+    height: 85%;
+    width: 70%;
+  }
 }
 
 @media (min-width: 1401px) {
@@ -797,6 +849,10 @@ nav {
             transform: scale(1.2);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+  }
+  .signIn-Up-section .form-section {
+    height: 70%;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=main.css.map */

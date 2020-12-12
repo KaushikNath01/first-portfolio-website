@@ -324,6 +324,19 @@ nav{
     font-family: lightP;
     outline: none;
 }
+.signIn-form > form > textarea{
+    border: none;
+    border: .5px solid rgb(59, 59, 59);
+    outline: none;
+    font-family: lightP;
+    padding: 10px 0px 0px 10px;
+    font-size: 16px;
+    height: 210px;
+}
+.signIn-form > form > .file{
+    font-size: 16px;
+    border-bottom: none;
+}
 .form-signIn-btn{
     margin: auto;
     width: 200px;
@@ -427,7 +440,9 @@ nav{
 .form-heading{
     margin: .5em 0 1.1em 0;
 }
-
+.error-content{
+    place-items: center;
+}
 #notfound {
     position: relative;
     height: 100vh;
@@ -487,28 +502,36 @@ nav{
     letter-spacing: 13px;
     margin: 0;
   }
-  
-  .notfound a {
-    font-family: lightP;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-    border: 2px solid;
-    background: transparent;
-    padding: 10px 40px;
-    font-size: 14px;
-    font-weight: 700;
-    transition: 0.2s all;
-  }
-  
-  .notfound a:hover {
-    background-color: #000000;
-    color: white;
-    border: none;
-  }
-  
-  @media (max-width: 480px) {
+  .signIn-Up-section{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: .8;
+    display: grid;
+    place-items: center;
+    .form-section{
+        display: flex;
+        background-color: white;
+        height: 70%;
+        width: 40%;
+        border-radius: 40px;
+        .form-grid-one{
+            img{
+                height: 190px;
+            }
+        }
+        form{
+            width: 90%;
+            margin: auto;
+            input{
+                width: 350px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
     .notfound .notfound-404 h1 {
         font-size: 182px;
     }
@@ -545,7 +568,16 @@ nav{
    }
    .notfound .notfound-404 h2 {
     font-size: 24px;
+   }
+   .notfound .notfound-404 {
+    margin-bottom: 110px;
+  }
 }
+.signIn-Up-section{
+    .form-section{
+        height: 70%;
+        width: 80%;
+    }
 }
 
 @media (min-width:769px) {
@@ -581,6 +613,12 @@ nav{
     .foot-grids{
         height: 40vh;
     }
+    .signIn-Up-section{
+        .form-section{
+            height: 50%;
+            width: 70%;
+        }
+    }
 }
 @media (min-width:1024px){
     .menu{
@@ -610,6 +648,12 @@ nav{
     }
     .foot-grids{
         height: 30vh;
+    }
+    .signIn-Up-section{
+        .form-section{
+            height: 60%;
+            width: 70%;
+        }
     }
 }
 @media (min-width:1200px){
@@ -644,6 +688,12 @@ nav{
     .foot-grids{
         height: 50vh;
     }
+    .signIn-Up-section{
+        .form-section{
+            height: 85%;
+            width: 70%;
+        }
+    }
 }
 @media (min-width:1401px){
     .merch{
@@ -656,6 +706,12 @@ nav{
                     transition: .3s ease-in-out;
                 }
             }
+        }
+    }
+    .signIn-Up-section{
+        .form-section{
+            height: 70%;
+            width: 70%;
         }
     }
 }
