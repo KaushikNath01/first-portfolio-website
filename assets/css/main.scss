@@ -317,6 +317,11 @@ nav{
     grid-template-columns: repeat(1,1fr);
     grid-gap: 1em;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none;
+  margin: 0; 
+}
 .signIn-form > form > input{
     height: 45px;
     width: 350px;
@@ -354,6 +359,9 @@ nav{
     border: none;
     background-color: black;
     color: white;
+}
+#fullNameId, #mobileId, #emailId, #passwordId{
+    color: red;
 }
 .foot-grids{
     background-color: rgb(59, 59, 59);
