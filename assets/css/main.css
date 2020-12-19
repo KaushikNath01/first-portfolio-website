@@ -700,6 +700,86 @@ input[type=number]::-webkit-outer-spin-button {
   height: 40px;
 }
 
+.skills-section {
+  height: 60vh;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.skills-section .bar {
+  color: black;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+  display: inline-block;
+}
+
+.skills-section .bar:nth-child(1) span::before {
+  width: 90%;
+}
+
+.skills-section .bar:nth-child(2) span::before {
+  width: 80%;
+}
+
+.skills-section .bar:nth-child(3) span::before {
+  width: 80%;
+}
+
+.skills-section .bar:nth-child(4) span::before {
+  width: 70%;
+}
+
+.skills-section .bar:nth-child(5) span::before {
+  width: 66%;
+}
+
+.skills-section .bar:nth-child(6) span::before {
+  width: 68%;
+}
+
+.skills-section .bar h3 {
+  margin-bottom: 10px;
+}
+
+.skills-section .bar span {
+  width: 100%;
+  height: 26px;
+  border-radius: 50px;
+  background-color: black;
+  display: inline-block;
+}
+
+.skills-section .bar span::before {
+  position: absolute;
+  content: "";
+  top: 41.4px;
+  left: 3px;
+  width: 80%;
+  height: 28%;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, right top, left top, from(#f05053), to(#e1eec3));
+  background: linear-gradient(to left, #f05053, #e1eec3);
+  -webkit-animation: newLine 4s ease;
+          animation: newLine 4s ease;
+}
+
+@-webkit-keyframes newLine {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes newLine {
+  from {
+    width: 0%;
+  }
+}
+
 @media (max-width: 480px) {
   .notfound .notfound-404 h1 {
     font-size: 182px;
@@ -738,6 +818,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .notfound .notfound-404 {
     margin-bottom: 110px;
+  }
+  .skills-section {
+    margin-bottom: 8em;
+    height: 60vh;
   }
 }
 
@@ -783,6 +867,9 @@ input[type=number]::-webkit-outer-spin-button {
     height: 50%;
     width: 70%;
   }
+  .skills-section {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -806,12 +893,18 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   }
+  .merch-section .skills-section {
+    margin-bottom: 1em;
+  }
   .foot-grids {
     height: 30vh;
   }
   .signIn-Up-section .form-section {
     height: 60%;
     width: 70%;
+  }
+  .skills-section {
+    height: 54vh;
   }
 }
 
@@ -850,6 +943,10 @@ input[type=number]::-webkit-outer-spin-button {
     height: 85%;
     width: 70%;
   }
+  .skills-section {
+    margin-bottom: 10em;
+    height: 80vh;
+  }
 }
 
 @media (min-width: 1401px) {
@@ -866,6 +963,9 @@ input[type=number]::-webkit-outer-spin-button {
   .signIn-Up-section .form-section {
     height: 70%;
     width: 70%;
+  }
+  .skills-section {
+    height: 68vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
