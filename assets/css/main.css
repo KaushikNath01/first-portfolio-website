@@ -592,9 +592,17 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .about-section {
-  margin: 6em 0 2.2em 0;
-  width: 90%;
-  margin: 0 auto;
+  width: 60%;
+  margin: auto;
+  line-height: 2em;
+}
+
+.about-section h1 {
+  margin-bottom: 1.5em;
+}
+
+.about-section h5 {
+  margin-bottom: .4em;
 }
 
 .form-heading {
@@ -701,20 +709,24 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .skills-section {
-  height: 60vh;
+  height: 40vh;
   max-width: 80%;
   margin: auto;
   margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .2em;
+  place-items: center;
 }
 
 .skills-section .bar {
   color: black;
   letter-spacing: 1.2px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
   width: 100%;
-  margin: 10px auto;
+  margin: 5px auto;
   display: inline-block;
 }
 
@@ -748,7 +760,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .skills-section .bar span {
   width: 100%;
-  height: 26px;
+  height: 20px;
   border-radius: 50px;
   background-color: black;
   display: inline-block;
@@ -757,8 +769,8 @@ input[type=number]::-webkit-outer-spin-button {
 .skills-section .bar span::before {
   position: absolute;
   content: "";
-  top: 41.4px;
-  left: 3px;
+  top: 36px;
+  left: 1.2px;
   width: 80%;
   height: 28%;
   border-radius: 50px;
@@ -784,6 +796,22 @@ input[type=number]::-webkit-outer-spin-button {
   .notfound .notfound-404 h1 {
     font-size: 182px;
   }
+  .skills-section {
+    height: 50vh;
+    margin-bottom: 5em;
+  }
+  .logo-small {
+    display: block;
+  }
+  .about-section {
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .signIn-form > form > input {
+    width: 310px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -807,6 +835,9 @@ input[type=number]::-webkit-outer-spin-button {
   .not-for-mobile {
     display: none;
   }
+  .menu {
+    max-height: 100vh;
+  }
   .menu links {
     height: 100vh;
   }
@@ -820,8 +851,24 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 110px;
   }
   .skills-section {
-    margin-bottom: 8em;
+    margin-bottom: 12em;
     height: 60vh;
+  }
+  .logo-small {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    color: white;
+    z-index: 1;
+    font-weight: 100;
+    font-family: lightP;
+  }
+  .about-section {
+    width: 90%;
+    margin: auto;
+    margin-top: 2.2em;
+    margin-bottom: 2em;
   }
 }
 
@@ -867,8 +914,21 @@ input[type=number]::-webkit-outer-spin-button {
     height: 50%;
     width: 70%;
   }
+  .social-media-section {
+    margin-top: 4em;
+  }
   .skills-section {
-    height: 50vh;
+    height: 60vh;
+    margin-bottom: 10em;
+  }
+  .logo-small {
+    display: none;
+  }
+  .about-section {
+    width: 90%;
+    margin: auto;
+    margin-top: 12em;
+    margin-bottom: 3.8em;
   }
 }
 
@@ -893,9 +953,6 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   }
-  .merch-section .skills-section {
-    margin-bottom: 1em;
-  }
   .foot-grids {
     height: 30vh;
   }
@@ -904,7 +961,13 @@ input[type=number]::-webkit-outer-spin-button {
     width: 70%;
   }
   .skills-section {
-    height: 54vh;
+    height: 60vh;
+  }
+  .about-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 4em;
   }
 }
 
@@ -947,6 +1010,12 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 10em;
     height: 80vh;
   }
+  .about-section {
+    width: 50%;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 2em;
+  }
 }
 
 @media (min-width: 1401px) {
@@ -965,7 +1034,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 70%;
   }
   .skills-section {
-    height: 68vh;
+    height: 62vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

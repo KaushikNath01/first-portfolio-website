@@ -443,9 +443,15 @@ input[type=number]::-webkit-outer-spin-button {
     
 }
 .about-section{
-    margin: 6em 0 2.2em 0;
-    width: 90%;
-    margin: 0 auto;
+    width: 60%;
+    margin:auto;
+    line-height: 2em;
+    h1{
+        margin-bottom: 1.5em;
+    }
+    h5{
+        margin-bottom: .4em;
+    }
 }
 .form-heading{
     margin: .5em 0 1.1em 0;
@@ -541,18 +547,21 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 .skills-section{
-    height: 60vh;
+    height: 40vh;
     max-width: 80%;
     margin: auto;
     margin-top: 1em;
+    display: grid;
+    grid-gap: .2em;
+    place-items: center;
     .bar{
         color: rgb(0, 0, 0);
         letter-spacing: 1.2px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         position: relative;
         width: 100%;
-        margin: 10px auto;
+        margin: 5px auto;
         display: inline-block;
         &:nth-child(1) span::before{
             width: 90%;
@@ -577,15 +586,15 @@ input[type=number]::-webkit-outer-spin-button {
         }
         span{
             width: 100%;
-            height: 26px;
+            height: 20px;
             border-radius: 50px;
             background-color: rgb(0, 0, 0);
             display: inline-block;
             &::before{
                 position: absolute;
                 content: "";
-                top: 41.4px;
-                left: 3px;
+                top: 36px;
+                left: 1.2px;
                 width: 80%;
                 height: 28%;
                 border-radius: 50px;
@@ -605,6 +614,22 @@ input[type=number]::-webkit-outer-spin-button {
 @media (max-width: 480px) {
     .notfound .notfound-404 h1 {
         font-size: 182px;
+    }
+    .skills-section{
+        height: 50vh;
+        margin-bottom: 5em;
+    }
+    .logo-small{
+        display: block;
+    }
+    .about-section{
+        width: 90%;
+        margin: auto;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    .signIn-form > form > input{
+        width: 310px;
     }
   }
   
@@ -630,6 +655,7 @@ input[type=number]::-webkit-outer-spin-button {
         display: none;
     }
    .menu{
+       max-height: 100vh;
        links{
            height: 100vh;
        }
@@ -644,9 +670,25 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 110px;
   }
   .skills-section{
-      margin-bottom: 8em;
+      margin-bottom: 12em;
       height: 60vh;
   }
+  .logo-small{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      color: white;
+      z-index: 1;
+      font-weight: 100;
+      font-family: lightP;
+  }
+  .about-section{
+    width: 90%;
+    margin: auto;
+    margin-top: 2.2em;
+    margin-bottom: 2em;
+}
 }
 .signIn-Up-section{
     .form-section{
@@ -694,8 +736,21 @@ input[type=number]::-webkit-outer-spin-button {
             width: 70%;
         }
     }
+    .social-media-section{
+        margin-top: 4em;
+    }
     .skills-section{
-        height: 50vh;
+        height: 60vh;
+        margin-bottom: 10em;
+    }
+    .logo-small{
+        display: none;
+    }
+    .about-section{
+        width: 90%;
+        margin: auto;
+        margin-top: 12em;
+        margin-bottom: 3.8em;
     }
 }
 @media (min-width:1024px){
@@ -722,9 +777,6 @@ input[type=number]::-webkit-outer-spin-button {
                 }
             }
         }
-        .skills-section{
-            margin-bottom: 1em;
-        }
     }
     .foot-grids{
         height: 30vh;
@@ -736,7 +788,13 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
     .skills-section{
-        height: 54vh;
+        height: 60vh;
+    }
+    .about-section{
+        width: 80%;
+        margin: auto;
+        margin-top: 10em;
+        margin-bottom: 4em;
     }
 }
 @media (min-width:1200px){
@@ -780,6 +838,12 @@ input[type=number]::-webkit-outer-spin-button {
         margin-bottom: 10em;
         height: 80vh;
     }
+    .about-section{
+        width: 50%;
+        margin: auto;
+        margin-top: 10em;
+        margin-bottom: 2em;
+    }
 }
 @media (min-width:1401px){
     .merch{
@@ -801,6 +865,6 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
     .skills-section{
-        height: 68vh;
+        height: 62vh;
     }
 }
