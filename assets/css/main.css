@@ -127,14 +127,17 @@ nav {
 }
 
 .menu {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  overflow-y: hidden;
   background-color: black;
   opacity: .9;
   color: white;
   position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   -webkit-transform: translateX(101%);
           transform: translateX(101%);
   will-change: transform;
@@ -399,15 +402,22 @@ nav {
   margin: 12px 0px 10px 0px;
 }
 
-.instaImg {
+.image-grid {
+  height: 340px;
+  overflow: hidden;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.image-grid .instaImg {
   height: 100%;
   width: 100%;
   cursor: pointer;
 }
 
-.instaImg:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.image-grid .instaImg:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
