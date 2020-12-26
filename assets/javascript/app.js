@@ -10,11 +10,11 @@ function toggleMenu () {
    if (menu.classList.contains('open')) {
      menu.classList.remove('open')
      document.body.classList.remove('lock-scroll');
-     ham.classList.remove('ham-hide')
+   //   ham.classList.remove('ham-hide')
    }else {
       menu.classList.add('open')
       document.body.classList.add('lock-scroll');
-      ham.classList.add('ham-hide')
+      // ham.classList.add('ham-hide')
    }
 }
 
@@ -24,24 +24,6 @@ const mobileNo = document.querySelector('.mobileNo')
 const email = document.querySelector('.email')
 const password = document.querySelector('.password')
 const confirmPassword = document.querySelector('.confirmPassword')
-
-form.addEventListener('submit',(e) => {
-   e.preventDefault();
-      validateForm()
-});
-
-const validateForm = () => {
-     const fullName = fullName.value.trim();
-     const mobileNo = mobileNo.value.trim();
-     const email = email.value.trim();
-     const password = password.value.trim();
-     const confirmPassword = confirmPassword.value.trim();
-
-     if (fullName === "") {
-          setErrormsg()
-     }
-}
-
 
 const instaNo = document.querySelector('.instaNos');
 const fundsGenerated = document.querySelector('.fundsGenerated');
