@@ -30,26 +30,31 @@ const fundsGenerated = document.querySelector('.fundsGenerated');
 const RevenueGenerated = document.querySelector('.RevenueGenerated');
 const SatisfiedCustomers = document.querySelector('.SatisfiedCustomers');
 
-let count = 1;
-setInterval(() => {
-    if (count < 1000) {
-        count++;
-        instaNo.innerText = count;
-        fundsGenerated.innerText = count;
-        RevenueGenerated.innerText = count;
-        SatisfiedCustomers.innerText = count;
-    }
-}, 5);
 
-setTimeout(() => {
-        let contentOne = document.getElementById('content-change-one');
-        let contentTwo = document.getElementById('content-change-two');
-        let contentThree = document.getElementById('content-change-three')
-        let contentFour = document.getElementById('content-change-four');
+// I just want this code to run on index.html page
+
+  if (window.location.pathname == '/index.html') {
+    let count = 1;
+    setInterval(() => {
+        if (count < 1000) {
+            count++;
+            instaNo.innerText = count;
+            fundsGenerated.innerText = count;
+            RevenueGenerated.innerText = count;
+            SatisfiedCustomers.innerText = count;
+        }
+    }, 5);
     
-        contentOne.innerText = "Insta Followers";
-        contentTwo.innerText = "Funds Generated";
-        contentThree.innerText = "Revenue Generated";
-        contentFour.innerText = "Satisfied Customers";
+    setTimeout(() => {
+            let contentOne = document.getElementById('content-change-one');
+            let contentTwo = document.getElementById('content-change-two');
+            let contentThree = document.getElementById('content-change-three')
+            let contentFour = document.getElementById('content-change-four');
         
-}, 7500);
+            contentOne.innerText = "Insta Followers";
+            contentTwo.innerText = "Funds Generated";
+            contentThree.innerText = "Revenue Generated";
+            contentFour.innerText = "Satisfied Customers";
+            
+    }, 7500);
+  }
