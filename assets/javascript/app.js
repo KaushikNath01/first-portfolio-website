@@ -58,3 +58,8 @@ const SatisfiedCustomers = document.querySelector('.SatisfiedCustomers');
             
     }, 7500);
   }
+
+  const headBtn = document.querySelector('.signBtn');
+  headBtn.addEventListener("click", () => {
+    location.href = "../signIn.html";
+  })
