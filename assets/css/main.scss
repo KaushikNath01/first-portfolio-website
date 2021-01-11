@@ -120,7 +120,7 @@ nav{
         justify-content: center;
         align-items: center;
         li{
-            margin: 2em;
+            margin: 1.5em;
             a{
                 font-size: 28px;
                 transition: .2s ease;
@@ -751,6 +751,18 @@ input[type=number]::-webkit-outer-spin-button {
     .signIn-form > form > input{
         width: 310px;
     }
+    .sign-in-container .signIn-section{
+        clip-path: none;
+       .form-div{
+        width: 260px;
+        height: 200px;
+        form{
+            input{
+                width: 220px;
+            }
+        }
+    }
+   }
   }
   
 @media (max-width:768px) {
