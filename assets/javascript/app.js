@@ -18,6 +18,8 @@ function toggleMenu () {
    }
 }
 
+// Form Validation
+
 const form = document.querySelector('.form')
 const fullName = document.querySelector('.fullName')
 const mobileNo = document.querySelector('.mobileNo')
@@ -25,13 +27,14 @@ const email = document.querySelector('.email')
 const password = document.querySelector('.password')
 const confirmPassword = document.querySelector('.confirmPassword')
 
+
+
+// I just want this code to run on index.html page
+
 const instaNo = document.querySelector('.instaNos');
 const fundsGenerated = document.querySelector('.fundsGenerated');
 const RevenueGenerated = document.querySelector('.RevenueGenerated');
 const SatisfiedCustomers = document.querySelector('.SatisfiedCustomers');
-
-
-// I just want this code to run on index.html page
 
   if (window.location.pathname == '/index.html') {
     let count = 1;
