@@ -143,7 +143,7 @@ nav {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   list-style: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 .menu .close-btn {
@@ -865,6 +865,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
   height: 100vh;
   width: 100vw;
+  overflow-y: hidden;
 }
 
 .sign-in-container .signIn-section {
@@ -879,14 +880,20 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sign-in-container .signIn-section .form-div {
-  height: 350px;
-  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 370px;
+  width: 400px;
   background-color: #5454fc;
   z-index: 1;
   border-radius: 16px;
   display: -ms-grid;
   display: grid;
   place-items: center;
+  z-index: 1;
 }
 
 .sign-in-container .signIn-section .form-div form h1 {
@@ -925,7 +932,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 20px;
   margin-bottom: 20px;
   outline: none;
-  font-size: 24px;
+  font-size: 20px;
   font-family: lightP;
   color: white;
   padding-bottom: 12px;
@@ -949,6 +956,64 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: .8em;
   outline: none;
   cursor: pointer;
+}
+
+.sign-in-container .signIn-section .form-div form .cta-signIn .cancel-btn {
+  border: 1.3px solid white;
+  background: none;
+  height: 50px;
+  width: 140px;
+  font-size: 20px;
+  font-family: lightP;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.sign-in-container .signIn-section .form-div form .cta-signIn .cancel-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.sign-in-container .signIn-section .form-div form .foot-anchor-info {
+  text-align: center;
+  margin-top: 1.2em;
+}
+
+.sign-in-container .signIn-section .form-div form .foot-anchor-info a {
+  color: white;
+  font-size: 14px;
+}
+
+.sign-in-container .signIn-section .on-click-hide {
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.first-name .first-input {
+  margin-top: .5em;
+}
+
+.first-name .first-input::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+.first-name .first-input:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.first-name .first-input::-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.first-name .first-input::placeholder {
+  color: #e6e6e6;
 }
 
 .black-text h1 {
@@ -988,6 +1053,12 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .sign-in-container .signIn-section .form-div form input {
     width: 220px;
+  }
+  .foot-anchor-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: .5em;
   }
 }
 
@@ -1058,10 +1129,18 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .sign-in-container .signIn-section .form-div {
     width: 340px;
-    height: 280px;
+    height: 340px;
   }
   .sign-in-container .signIn-section .form-div form input {
     width: 290px;
+  }
+  .foot-anchor-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: .7em;
   }
 }
 

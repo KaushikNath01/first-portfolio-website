@@ -1,20 +1,20 @@
+// for the ham menu section
+
 const ham = document.querySelector('.ham > .ham-menu');
 const menu = document.querySelector('.menu');
 const closeBtn = document.querySelector('.close-btn');
 
 ham.addEventListener("click", toggleMenu);
-closeBtn.addEventListener("click",toggleMenu);
+closeBtn.addEventListener("click", toggleMenu);
 
 
 function toggleMenu () {
    if (menu.classList.contains('open')) {
      menu.classList.remove('open')
      document.body.classList.remove('lock-scroll');
-   //   ham.classList.remove('ham-hide')
    }else {
       menu.classList.add('open')
       document.body.classList.add('lock-scroll');
-      // ham.classList.add('ham-hide')
    }
 }
 
@@ -66,3 +66,29 @@ const SatisfiedCustomers = document.querySelector('.SatisfiedCustomers');
   headBtn.addEventListener("click", () => {
     location.href = "../signIn.html";
   })
+
+  //   for the signIn page
+  const anchor1 = document.querySelector('.anchor-forgot-pass');
+  const anchor2 = document.querySelector('.anchor-create-act');
+  const form1 = document.querySelector('.first-form');
+  const form2 = document.querySelector('.second-form');
+  const form3 = document.querySelector('.third-form');
+    
+        anchor1.addEventListener("click", () => {
+             if(form1.classList.contains('on-click-hide')){
+                 form1.classList.remove('on-click-hide');
+             }else{
+                 form1.classList.add('on-click-hide');
+                 form2.classList.remove('on-click-hide')
+             }
+        })
+
+        anchor2.addEventListener("click", () => {
+            if(form1.classList.contains('on-click-hide')){
+                form1.classList.remove('on-click-hide')
+            }else{
+                form1.classList.add('on-click-hide');
+                form3.classList.remove('on-click-hide');
+            }
+        })
+        

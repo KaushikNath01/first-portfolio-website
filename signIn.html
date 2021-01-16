@@ -8,23 +8,99 @@
     <link rel="icon" href="./favicon.png.png" type="image/x-icon">
 </head>
 <body>
+       <section style="background-color: black;">
+              <div class="logo-small" style="color: white;">
+                    <h1>KN</h1>
+              </div>
+              <div class="ham">
+                    <span class="ham-menu" style="color: white">
+                            &#9776;
+                    </span>
+              </div>
+              <div class="menu">
+                  <div class="close-btn">
+                        &#215;
+                  </div>
+                  <div class="links">
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./portfolio.html">Portfolio</a></li>
+                      <li><a href="./shop.html">Shop</a></li>
+                      <li><a href="./contact.html">Contact</a></li>
+                      <li><a href="./about.html">About me</a></li>
+                      <li><a href="./signIn.html">Sign In</a></li>
+                  </div>
+            </div>
+              <div class="full-navbar">
+                  <div class="navbar">
+                        <div class="logo">
+                              <h1 style="font-weight: 100;">Kaush Nath</h1>
+                        </div>
+                        <nav>
+                              <ul class="navLinks">
+                                  <li><a href="./index.html">Home</a></li>
+                                  <li><a href="./portfolio.html">Portfolio</a></li>
+                                  <li><a href="./shop.html">Shop</a></li>
+                                  <li><a href="./contact.html">Contact</a></li>
+                                  <li><a href="./about.html">About me</a></li>
+                                  <li><button class="signBtn" href="#">Sign In</button></li>
+                              </ul>
+                        </nav>
+                  </div>
+              </div>
+      </section>
       <div class="sign-in-container">
              <div class="signIn-section">
                     <div class="form-div">
-                        <form action="POST">
-                            <h1>Sign In</h1>
-                               <div class="email-signIn">
-                                      <input class="email-input" type="email" placeholder="enter email">
-                               </div>
-                               <div class="password-signIn">
-                                      <input class="password-input" type="password" placeholder="enter password">
-                               </div>
-                               <div class="cta-signIn">
-                                      <button class="signIn-btn">Sign In</button>
-                               </div>
-                        </form>
+                         <section class="first-form">
+                                   <form action="POST">
+                                          <h1>Sign In</h1>
+                                          <div class="email-signIn">
+                                                 <input class="email-input" type="email" placeholder="enter email">
+                                          </div>
+                                          <div class="password-signIn">
+                                                 <input class="password-input" type="password" placeholder="enter password">
+                                          </div>
+                                          <div class="cta-signIn">
+                                                 <button class="signIn-btn">Sign In</button>
+                                          </div>
+                                          <div class="foot-anchor-info">
+                                                 <a href="#" class="anchor-forgot-pass">Forgot your password?</a><br>
+                                                 <a href="#" class="anchor-create-act">Create Account</a>
+                                          </div>
+                                   </form>
+                         </section>
+                         <section class="second-form on-click-hide">
+                                   <form action="POST">
+                                          <h1 style="margin-bottom: 2em;">Reset Your Password</h1>
+                                          <div class="email-signIn">
+                                                 <input class="email-input" type="email" placeholder="enter email">
+                                          </div>
+                                          <div class="cta-signIn">
+                                                 <button type="submit" class="signIn-btn">Submit</button>
+                                                 <button class="cancel-btn">Cancel</button>
+                                          </div>
+                                   </form>
+                         </section>
+                         <section class="third-form on-click-hide">
+                                   <form action="POST">
+                                          <h1>Create Account</h1>
+                                          <div class="first-name">
+                                                 <input type="text" class="first-input" placeholder="first name">
+                                          </div>
+                                          <div class="email-signIn">
+                                                 <input class="email-input" type="email" placeholder="enter email">
+                                          </div>
+                                          <div class="password-signIn">
+                                                 <input class="password-input" type="password" placeholder="enter password">
+                                          </div>
+                                          <div class="cta-signIn">
+                                                 <button class="signIn-btn">Create</button>
+                                          </div>
+                                   </form>
+                         </section>
                     </div>
              </div>
       </div>
+      <script src="./assets/javascript/app.js"></script>
 </body>
 </html>

@@ -103,7 +103,7 @@ nav{
     will-change: transform;
     transition: .5s ease-in-out;
     list-style: none;
-    z-index: 1;
+    z-index: 10;
     .close-btn{
         font-size: 44px;
         color: white;
@@ -658,6 +658,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     height: 100vh;
     width: 100vw;
+    overflow-y: hidden;
     .signIn-section{
         height: 100%;
         width: 100%;
@@ -666,13 +667,18 @@ input[type=number]::-webkit-outer-spin-button {
         display: grid;
         place-items: center;
         .form-div{
-            height: 350px;
-            width: 380px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 370px;
+            width: 400px;
             background-color: rgb(84, 84, 252);
             z-index: 1;
             border-radius: 16px;
             display: grid;
             place-items: center;
+            z-index: 1;
             form{
                h1{
                    text-align: center;
@@ -695,7 +701,7 @@ input[type=number]::-webkit-outer-spin-button {
                     margin-top: 20px;
                     margin-bottom: 20px;
                     outline: none;
-                    font-size: 24px;
+                    font-size: 20px;
                     font-family: lightP;
                     color: white;
                     padding-bottom: 12px;
@@ -717,9 +723,50 @@ input[type=number]::-webkit-outer-spin-button {
                         outline: none;
                         cursor: pointer;
                     }
+                    .cancel-btn{
+                        border: 1.3px solid white;
+                        background: none;
+                        height: 50px;
+                        width: 140px;
+                        font-size: 20px;
+                        font-family: lightP;
+                        font-weight: 400;
+                        border-radius: 4px;
+                        background-color: none;
+                        color: white;
+                        outline: none;
+                        cursor: pointer;
+                        
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+                .foot-anchor-info{
+                    text-align: center;
+                    margin-top: 1.2em;
+                    a{
+                        color: white;
+                        font-size: 14px;
+                    }
                 }
 
             }
+        }
+        .on-click-hide{
+            display: none;
+            pointer-events: none;
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
+    }
+}
+.first-name{
+    .first-input{
+        margin-top: .5em;
+        &::placeholder{
+            color: rgb(230, 230, 230);
         }
     }
 }
@@ -762,6 +809,10 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
     }
+   }
+   .foot-anchor-info{
+       display: flex;
+       margin-bottom: .5em;
    }
   }
   
@@ -831,12 +882,17 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .sign-in-container .signIn-section .form-div{
     width: 340px;
-    height: 280px;
+    height: 340px;
     form{
         input{
             width: 290px;
         }
     }
+}
+.foot-anchor-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .7em;
 }
 }
 .signIn-Up-section{
