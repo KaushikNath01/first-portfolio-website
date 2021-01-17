@@ -430,6 +430,85 @@ nav {
   transition: .3s ease-in-out;
 }
 
+.newsletter-container {
+  height: 35vh;
+  width: 96%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f1f1;
+  margin-top: 2.5em;
+}
+
+.newsletter-container .news-div {
+  margin-bottom: 1.8em;
+}
+
+.newsletter-container .news-div h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: lighter;
+  margin-bottom: 1.5em;
+}
+
+.newsletter-container .news-div .news-input {
+  margin-bottom: .9em;
+}
+
+.newsletter-container .news-div .news-input input {
+  width: 700px;
+  height: 44px;
+  border: none;
+  background-color: none;
+  border: 0.9px solid #9e9e9e;
+  border-radius: 2px;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.newsletter-container .news-div .news-input input::-webkit-input-placeholder {
+  font-size: 17px;
+  color: #b9b8b8;
+}
+
+.newsletter-container .news-div .news-input input:-ms-input-placeholder {
+  font-size: 17px;
+  color: #b9b8b8;
+}
+
+.newsletter-container .news-div .news-input input::-ms-input-placeholder {
+  font-size: 17px;
+  color: #b9b8b8;
+}
+
+.newsletter-container .news-div .news-input input::placeholder {
+  font-size: 17px;
+  color: #b9b8b8;
+}
+
+.newsletter-container .news-div .news-cta {
+  text-align: center;
+}
+
+.newsletter-container .news-div .news-cta button {
+  height: 44px;
+  width: 120px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: none;
+  background-color: black;
+  color: white;
+  font-family: lightP;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 .signIn-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1040,7 +1119,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
   }
-  .signIn-form > form > input {
+  .form-section {
+    margin-top: 1.2em;
+  }
+  .form-section .signIn-form > form > input {
     width: 310px;
   }
   .sign-in-container .signIn-section {
@@ -1059,6 +1141,18 @@ input[type=number]::-webkit-outer-spin-button {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: .5em;
+  }
+  .newsletter-container {
+    height: 66vh;
+    width: 96%;
+    margin: 3em auto;
+  }
+  .newsletter-container .news-div h1 {
+    font-size: 1.8em;
+  }
+  .newsletter-container .news-div .news-input input {
+    width: 96%;
+    margin-left: 7px;
   }
 }
 
@@ -1142,6 +1236,16 @@ input[type=number]::-webkit-outer-spin-button {
         justify-content: space-around;
     margin-top: .7em;
   }
+  .newsletter-container {
+    height: 74vh;
+    margin: 3.4em auto;
+  }
+  .newsletter-container .news-div .news-input {
+    text-align: center;
+  }
+  .newsletter-container .news-div .news-input input {
+    width: 90%;
+  }
 }
 
 .signIn-Up-section .form-section {
@@ -1207,6 +1311,16 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .sign-in-container .signIn-section .form-div form input {
     width: 290px;
+  }
+  .newsletter-container {
+    height: 54vh;
+    margin: 2em auto;
+  }
+  .newsletter-container .news-div .news-input {
+    text-align: center;
+  }
+  .newsletter-container .news-div .news-input input {
+    width: 100%;
   }
 }
 
@@ -1274,6 +1388,16 @@ input[type=number]::-webkit-outer-spin-button {
   .sign-in-container .signIn-section .form-div form input {
     width: 290px;
   }
+  .newsletter-container {
+    height: 54vh;
+    margin: 2em auto;
+  }
+  .newsletter-container .news-div .news-input {
+    text-align: center;
+  }
+  .newsletter-container .news-div .news-input input {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1320,6 +1444,9 @@ input[type=number]::-webkit-outer-spin-button {
     margin: auto;
     margin-top: 10em;
     margin-bottom: 2em;
+  }
+  .newsletter-container {
+    height: 56vh;
   }
 }
 

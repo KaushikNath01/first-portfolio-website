@@ -312,6 +312,59 @@ nav{
         }
     }
 }
+.newsletter-container{
+    height: 35vh;
+    width: 96%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    background-color: rgb(243, 241, 241);
+    margin-top: 2.5em;
+    .news-div{
+        margin-bottom: 1.8em;
+        h1{
+            text-align: center;
+            font-size: 36px;
+            font-weight: lighter;
+            margin-bottom: 1.5em;
+        }
+        .news-input{
+            margin-bottom: .9em;
+            input{
+                width: 700px;
+                height: 44px;
+                border: none;
+                background-color: none;
+                border: .9px solid rgb(158, 158, 158);
+                border-radius: 2px;
+                outline: none;
+                font-size: 18px;
+                padding-left: 10px;
+                &::placeholder{
+                    font-size: 17px;
+                    color: rgb(185, 184, 184);
+                }
+            }
+        }
+        .news-cta{
+            text-align: center;
+            button{
+                height: 44px;
+                width: 120px;
+                border-radius: 4px;
+                outline: none;
+                border: none;
+                background-color: none;
+                background-color: black;
+                color: white;
+                font-family: lightP;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+}
 .signIn-form{
     display: flex;
     justify-content: center;
@@ -795,8 +848,11 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
-    .signIn-form > form > input{
-        width: 310px;
+    .form-section{
+        margin-top: 1.2em;
+        .signIn-form > form > input{
+            width: 310px;
+        }
     }
     .sign-in-container .signIn-section{
         clip-path: none;
@@ -814,7 +870,23 @@ input[type=number]::-webkit-outer-spin-button {
        display: flex;
        margin-bottom: .5em;
    }
+   .newsletter-container{
+       height: 66vh;
+       width: 96%;
+       margin: 3em auto;
+    .news-div{
+        h1{
+            font-size: 1.8em;
+        }
+        .news-input{
+            input{
+                width: 96%;
+                margin-left: 7px;
+            }
+        }
+    }
   }
+}
   
 @media (max-width:768px) {
     .navbar{
@@ -894,6 +966,18 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: space-around;
     margin-top: .7em;
 }
+.newsletter-container{
+    height: 74vh;
+    margin: 3.4em auto;
+ .news-div{
+     .news-input{
+         text-align: center;
+         input{
+             width: 90%;
+         }
+     }
+ }
+}
 }
 .signIn-Up-section{
     .form-section{
@@ -964,6 +1048,18 @@ input[type=number]::-webkit-outer-spin-button {
                 width: 290px;
             }
         }
+    }
+    .newsletter-container{
+        height: 54vh;
+        margin: 2em auto;
+     .news-div{
+         .news-input{
+             text-align: center;
+             input{
+                 width: 100%;
+             }
+         }
+     }
     }
 }
 @media(max-width:863px){
@@ -1039,6 +1135,18 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
     }
+    .newsletter-container{
+        height: 54vh;
+        margin: 2em auto;
+     .news-div{
+         .news-input{
+             text-align: center;
+             input{
+                 width: 100%;
+             }
+         }
+     }
+    }
 }
 @media (min-width:1200px){
     .form-section{
@@ -1086,6 +1194,9 @@ input[type=number]::-webkit-outer-spin-button {
         margin: auto;
         margin-top: 10em;
         margin-bottom: 2em;
+    }
+    .newsletter-container{
+        height: 56vh;
     }
 }
 @media (min-width:1401px){
