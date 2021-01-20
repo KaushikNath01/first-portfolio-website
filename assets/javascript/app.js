@@ -62,12 +62,13 @@ const SatisfiedCustomers = document.querySelector('.SatisfiedCustomers');
     }, 7500);
   }
 
-  const headBtn = document.querySelector('.signBtn');
-  headBtn.addEventListener("click", () => {
-    location.href = "../signIn.html";
-  })
+
 
   //   for the signIn page
+
+  if (window.location.pathname == '/signIn.html') {
+
+  const headBtn = document.querySelector('.signBtn');
   const anchor1 = document.querySelector('.anchor-forgot-pass');
   const anchor2 = document.querySelector('.anchor-create-act');
   const form1 = document.querySelector('.first-form');
@@ -91,4 +92,5 @@ const SatisfiedCustomers = document.querySelector('.SatisfiedCustomers');
                 form3.classList.remove('on-click-hide');
             }
         })
+     }
         

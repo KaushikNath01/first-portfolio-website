@@ -688,6 +688,31 @@ input[type=number]::-webkit-outer-spin-button {
   color: black;
 }
 
+.merch-section .cta-merch {
+  margin-top: 1.4em;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+
+.merch-section .cta-merch .btn-merch {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background: none;
+  color: black;
+  background-color: white;
+  border: 1.8px solid black;
+  font-size: 18px;
+  font-family: lightP;
+  cursor: pointer;
+}
+
+.merch-section .cta-merch .btn-merch:hover {
+  border: none;
+  background-color: black;
+  color: white;
+}
+
 .about-section {
   width: 60%;
   margin: auto;
@@ -894,7 +919,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: auto;
   padding: 0 2rem 2rem;
   margin-top: 10em;
-  margin-bottom: 3em;
+  margin-bottom: 1.2em;
 }
 
 .portfolio-container .port-heading {
@@ -938,6 +963,30 @@ input[type=number]::-webkit-outer-spin-button {
 .portfolio-container .portfolio-gallery .gallery-item .gallery-image:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+}
+
+.portfolio-container .cta-portfolio {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.portfolio-container .cta-portfolio .btn-portfolio {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background: none;
+  color: black;
+  background-color: white;
+  border: 1.8px solid black;
+  font-size: 18px;
+  font-family: lightP;
+  cursor: pointer;
+}
+
+.portfolio-container .cta-portfolio .btn-portfolio:hover {
+  border: none;
+  background-color: black;
+  color: white;
 }
 
 .sign-in-container {
@@ -1186,16 +1235,23 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-.bg-color-container .course-section .cta-course button {
-  height: 48px;
-  width: 140px;
+.bg-color-container .course-section .cta-course .btn-course {
+  height: 50px;
+  width: 200px;
   border: none;
-  background-color: none;
-  background-color: black;
-  color: white;
-  font-size: 17px;
+  background: none;
+  color: black;
+  background-color: white;
+  border: 1.8px solid black;
+  font-size: 18px;
   font-family: lightP;
   cursor: pointer;
+}
+
+.bg-color-container .course-section .cta-course .btn-course:hover {
+  border: none;
+  background-color: black;
+  color: white;
 }
 
 @media (max-width: 480px) {
