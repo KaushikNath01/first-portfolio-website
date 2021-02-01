@@ -8,6 +8,14 @@
     font-family: lightP;
     src: url(../fonts/Poppins-Light.ttf);
 }
+@font-face{
+    font-family: lightD;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face{
+    font-family: lightL;
+    src: url(../fonts/Lobster-Regulars.ttf);
+}
 body{
     font-family: lightP;
     overflow-x: hidden;
@@ -52,8 +60,17 @@ header{
 .logo{
     flex: 1;
     h1{
-        font-size: 28px;
+        font-size: 29px;
+        font-family: lightD;
+        font-weight: lighter;
     }
+}
+.logo-small{
+        h1{
+            font-size: 27px;
+            font-family: lightD;
+            font-weight: lighter;
+        }
 }
 nav{
     flex: 2;
@@ -178,6 +195,14 @@ nav{
                 &:hover{
                     transition: .2s ease-in-out;
                     font-size: 40px;
+                    color: rgb(255, 74, 119);
+                }
+            }
+            .dropbtn{
+                color: white;
+                font-size: 22px;
+                &:hover{
+                    transition: .2s ease-in-out;
                     color: rgb(255, 74, 119);
                 }
             }
